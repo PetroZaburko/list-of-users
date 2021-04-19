@@ -2,6 +2,7 @@
 session_start();
 include_once 'functions.php';
 isUserLogged();
+hasReuest($_GET['id']);
 
 $user = getUserById($_GET['id']);
 ?>

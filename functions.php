@@ -230,3 +230,9 @@ function deleteUser($id) {
     ]);
     return $result;
 }
+
+function hasReuest($request) {
+    if (!$request) {
+        redirectTo('users.php');
+    }
+}

@@ -2,6 +2,7 @@
 session_start();
 include_once 'functions.php';
 isUserLogged();
+hasReuest($_POST['id']);
 
 if($_SESSION['authUser']['is_admin'] || $_POST['id'] == $_SESSION['authUser']['id']) {
     if(editUserInformation($_POST['id'], $_POST['name'], $_POST['company'], $_POST['telephone'], $_POST['address'] )) {

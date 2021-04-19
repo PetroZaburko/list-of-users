@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'functions.php';
-
+hasReuest($_POST);
 $email = $_POST['email'];
 $password = $_POST['password'];
 $user = getUserByEmail($email);

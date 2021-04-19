@@ -2,6 +2,7 @@
 session_start();
 require_once 'functions.php';
 isUserLogged();
+hasReuest($_POST['id']);
 
 if($_SESSION['authUser']['is_admin'] || $_POST['id'] == $_SESSION['authUser']['id']) {
     // updating only email

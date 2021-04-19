@@ -2,6 +2,7 @@
 session_start();
 require_once 'functions.php';
 isUserLogged();
+hasReuest($_GET['id']);
 
 if($_SESSION['authUser']['is_admin'] || $_GET['id'] == $_SESSION['authUser']['id']) {
     $user = getUserById($_GET['id']);

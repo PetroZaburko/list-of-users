@@ -1,0 +1,26 @@
+CREATE table users (
+id int auto_increment primary key,
+email varchar(255) not null,
+password varchar(255) not null,
+name varchar(255),
+image varchar(255),
+company varchar(255),
+telephone varchar(255),
+address varchar(255),
+vk varchar (255),
+telegram varchar(255),
+instagram varchar(255),
+is_admin int default 0,
+status int default 0
+);
+
+CREATE table statuses (
+id int auto_increment primary key,
+status varchar (255) not null,
+interpretation varchar(255) not null
+);
+
+insert into statuses (status, interpretation) values 
+('Online', 'success'),
+('Not here', 'warning'),
+('Do not distrub', 'danger');

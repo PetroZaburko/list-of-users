@@ -22,7 +22,7 @@ else {
     <main id="js-page-content" role="main" class="page-content mt-3">
         <div class="subheader">
             <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-lock'></i> Безопасность
+                <i class='subheader-icon fal fa-lock'></i> Security
             </h1>
         </div>
         <?php displayFlashMessage(); ?>
@@ -32,7 +32,7 @@ else {
                     <div id="panel-1" class="panel">
                         <div class="panel-container">
                             <div class="panel-hdr">
-                                <h2>Обновление эл. адреса и пароля пользователя &nbsp;
+                                <h2>Updating email and password for user&nbsp;
                                     <b><?= $user['name'] ?></b>
                                 </h2>
                             </div>
@@ -47,19 +47,19 @@ else {
 
                                 <!-- password -->
                                 <div class="form-group">
-                                    <label class="form-label" for="password">Пароль</label>
+                                    <label class="form-label" for="password">Password</label>
                                     <input type="password" id="password" name="password" class="form-control">
                                 </div>
 
                                 <!-- password confirmation-->
                                 <div class="form-group">
-                                    <label class="form-label" for="confirm_password">Подтверждение пароля</label>
+                                    <label class="form-label" for="confirm_password">Confirm password</label>
                                     <input type="password" id="confirm_password" name="confirm_password" class="form-control">
                                 </div>
 
 
                                 <div class="col-md-12 mt-3 d-flex flex-row-reverse">
-                                    <button class="btn btn-warning">Изменить</button>
+                                    <button class="btn btn-warning">Update</button>
                                 </div>
                             </div>
                         </div>

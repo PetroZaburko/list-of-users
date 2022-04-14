@@ -22,7 +22,7 @@ else {
     <main id="js-page-content" role="main" class="page-content mt-3">
         <div class="subheader">
             <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-image'></i> Загрузить аватар
+                <i class='subheader-icon fal fa-image'></i>Upload avatar
             </h1>
         </div>
         <?php displayFlashMessage();?>
@@ -32,7 +32,7 @@ else {
                     <div id="panel-1" class="panel">
                         <div class="panel-container">
                             <div class="panel-hdr">
-                                <h2>Текущий аватар попьзователя &nbsp;
+                                <h2>Current user avatar &nbsp;
                                     <b><?= $user['name'] ?></b>
                                 </h2>
                             </div>
@@ -42,11 +42,11 @@ else {
                                 </div>
                                 <input type="hidden" name="id" id="id" value="<?= $user['id'] ?>">
                                 <div class="form-group">
-                                    <label class="form-label" for="image">Выберите аватар</label>
+                                    <label class="form-label" for="image">Chose avatar</label>
                                     <input type="file" id="image" name="image" class="form-control-file">
                                 </div>
                                 <div class="col-md-12 mt-3 d-flex flex-row-reverse">
-                                    <button class="btn btn-warning">Загрузить</button>
+                                    <button class="btn btn-warning">Upload</button>
                                 </div>
                             </div>
                         </div>

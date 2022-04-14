@@ -23,7 +23,7 @@ else {
     <main id="js-page-content" role="main" class="page-content mt-3">
         <div class="subheader">
             <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-sun'></i> Установить статус
+                <i class='subheader-icon fal fa-sun'></i>Set status
             </h1>
         </div>
         <form action="status.php" method="post">
@@ -32,7 +32,7 @@ else {
                     <div id="panel-1" class="panel">
                         <div class="panel-container">
                             <div class="panel-hdr">
-                                <h2>Установка текущего статуса</h2>
+                                <h2>Setting current status</h2>
                             </div>
                             <div class="panel-content">
                                 <div class="row">
@@ -41,7 +41,7 @@ else {
                                         <input type="hidden" name="id" id="id" class="form-control" value="<?= $user['id'] ?>">
                                         <!-- status -->
                                         <div class="form-group">
-                                            <label class="form-label" for="example-select">Выберите статус</label>
+                                            <label class="form-label" for="example-select">Chose your status</label>
                                             <select class="form-control" id="status" name="status">
                                                 <?php foreach (getAllUserStatuses() as $status): ?>
                                                     <option value="<?= $status['id'] ?>" <?= $status['id'] == $user['status'] ? 'selected' : '' ?>><?= $status['status'] ?></option>
@@ -50,7 +50,7 @@ else {
                                         </div>
                                     </div>
                                     <div class="col-md-12 mt-3 d-flex flex-row-reverse">
-                                        <button class="btn btn-warning">Set Status</button>
+                                        <button class="btn btn-warning">Update</button>
                                     </div>
                                 </div>
                             </div>

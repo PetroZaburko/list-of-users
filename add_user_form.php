@@ -15,7 +15,7 @@ isUserAdmin();
         <?php displayFlashMessage(); ?>
         <div class="subheader">
             <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-plus-circle'></i> Добавить пользователя
+                <i class='subheader-icon fal fa-plus-circle'></i> Add user
             </h1>
         </div>
         <form action="add_user.php" method="post" enctype="multipart/form-data">
@@ -24,30 +24,30 @@ isUserAdmin();
                     <div id="panel-1" class="panel">
                         <div class="panel-container">
                             <div class="panel-hdr">
-                                <h2>Общая информация</h2>
+                                <h2>General information</h2>
                             </div>
                             <div class="panel-content">
                                 <!-- username -->
                                 <div class="form-group">
-                                    <label class="form-label" for="name">Имя</label>
+                                    <label class="form-label" for="name">Name</label>
                                     <input type="text" id="name" name="name" class="form-control">
                                 </div>
 
                                 <!-- title -->
                                 <div class="form-group">
-                                    <label class="form-label" for="company">Место работы</label>
+                                    <label class="form-label" for="company">Work place</label>
                                     <input type="text" id="company" name="company" class="form-control">
                                 </div>
 
                                 <!-- tel -->
                                 <div class="form-group">
-                                    <label class="form-label" for="telephone">Номер телефона</label>
+                                    <label class="form-label" for="telephone">Phone</label>
                                     <input type="text" id="telephone" name="telephone" class="form-control">
                                 </div>
 
                                 <!-- address -->
                                 <div class="form-group">
-                                    <label class="form-label" for="address">Адрес</label>
+                                    <label class="form-label" for="address">Address</label>
                                     <input type="text" id="address" name="address" class="form-control">
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ isUserAdmin();
                     <div id="panel-1" class="panel">
                         <div class="panel-container">
                             <div class="panel-hdr">
-                                <h2>Безопасность и Медиа</h2>
+                                <h2>Security and media</h2>
                             </div>
                             <div class="panel-content">
                                 <!-- email -->
@@ -70,14 +70,14 @@ isUserAdmin();
 
                                 <!-- password -->
                                 <div class="form-group">
-                                    <label class="form-label" for="password">Пароль</label>
+                                    <label class="form-label" for="password">Password</label>
                                     <input type="password" id="password" name="password" class="form-control" required>
                                 </div>
 
                                 
                                 <!-- status -->
                                 <div class="form-group">
-                                    <label class="form-label" for="example-select">Выберите статус</label>
+                                    <label class="form-label" for="example-select">Chose status</label>
                                     <select class="form-control" id="status" name="status">
                                         <?php foreach (getAllUserStatuses() as $status): ?>
                                         <option value="<?= $status['id'] ?>"><?= $status['status'] ?></option>
@@ -86,7 +86,7 @@ isUserAdmin();
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="form-label" for="image">Загрузить аватар</label>
+                                    <label class="form-label" for="image">Upload avatar</label>
                                     <input type="file" id="image" name="image" class="form-control-file">
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ isUserAdmin();
                     <div id="panel-1" class="panel">
                         <div class="panel-container">
                             <div class="panel-hdr">
-                                <h2>Социальные сети</h2>
+                                <h2>Social networks</h2>
                             </div>
                             <div class="panel-content">
                                 <div class="row">
@@ -146,7 +146,7 @@ isUserAdmin();
                                         </div>
                                     </div>
                                     <div class="col-md-12 mt-3 d-flex flex-row-reverse">
-                                        <button class="btn btn-success">Добавить</button>
+                                        <button class="btn btn-success">Add</button>
                                     </div>
                                 </div>
                             </div>

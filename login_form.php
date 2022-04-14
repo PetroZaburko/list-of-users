@@ -9,7 +9,7 @@ require_once 'functions.php';
 <head>
     <meta charset="utf-8">
     <title>
-        Войти
+        Login
     </title>
     <meta name="description" content="Login">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@ require_once 'functions.php';
         <div class="page-logo m-0 w-100 align-items-center justify-content-center rounded border-bottom-left-radius-0 border-bottom-right-radius-0 px-4">
             <a href="javascript:void(0)" class="page-logo-link press-scale-down d-flex align-items-center">
                 <img src="img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
-                <span class="page-logo-text mr-1">Учебный проект</span>
+                <span class="page-logo-text mr-1">Users</span>
                 <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
             </a>
         </div>
@@ -46,20 +46,20 @@ require_once 'functions.php';
                     <input type="email" name="email" id="username" class="form-control" placeholder="Email"  required>
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="password">Пароль</label>
+                    <label class="form-label" for="password">Password</label>
                     <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
                 </div>
                 <div class="form-group text-left">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="rememberme">
-                        <label class="custom-control-label" for="rememberme">Запомнить меня</label>
+                        <label class="custom-control-label" for="rememberme">Remember me</label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-default float-right">Войти</button>
+                <button type="submit" class="btn btn-default float-right">Login</button>
             </form>
         </div>
         <div class="blankpage-footer text-center">
-            Нет аккаунта? <a href="register_form.php"><strong>Зарегистрироваться</strong>
+            Don't have an account? <a href="register_form.php"><strong>Register</strong>
         </div>
     </div>
     <video poster="img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>

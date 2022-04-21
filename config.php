@@ -2,7 +2,7 @@
 
 //db config
 $host = '127.0.0.1';
-$db   = 'marlin_immersion';
+$db   = 'users';
 $user = 'root';
 $pass = 'asdfg001';
 $charset = 'utf8';
